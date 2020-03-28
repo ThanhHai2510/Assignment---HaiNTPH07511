@@ -14,10 +14,11 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductComponent } from './product/product.component';
 import { BookService } from './book.service';
 import { AdminComponent } from './admin/admin.component';
+import { AddBookComponent } from './add-book/add-book.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, SliderComponent, NewBooksComponent, TopRateComponent, BlogComponent, HomeComponent, ProductDetailComponent, ProductComponent, AdminComponent ],
+  declarations: [ AppComponent, HelloComponent, SliderComponent, NewBooksComponent, TopRateComponent, BlogComponent, HomeComponent, ProductDetailComponent, ProductComponent, AdminComponent, AddBookComponent ],
   bootstrap:    [ AppComponent ],
   providers: [BookService]
 })
