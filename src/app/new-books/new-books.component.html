@@ -1,0 +1,44 @@
+<!-- Start Category Area -->
+<section class="htc__category__area ptb--100">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="section__title--2 text-center">
+					<h2 class="title__line">New Books</h2>
+					<p>But I must explain to you how all this mistaken idea</p>
+				</div>
+			</div>
+		</div>
+		<div class="htc__product__container">
+			<div class="row">
+				<div class="product__list clearfix mt--30">
+					<!-- Start Single Category -->
+					<div class="col-md-4 col-lg-3 col-sm-4 col-xs-12" *ngFor="let book of books">
+						<div class="category">
+							<div class="ht__cat__thumb">
+								<a routerLink="/book/{{book.id}}">
+									<img src="{{book.image}}" alt="product images">
+                                        </a>
+							</div>
+							<div class="fr__hover__info">
+								<ul class="product__action">
+									<li><a routerLink="/book/{{book.id}}"><i class="icons"><span class="material-icons">visibility</span></i></a></li>
+
+									<li><a><i class="icons"><span class="material-icons">add_shopping_cart</span></i></a></li>
+								</ul>
+							</div>
+							<div class="fr__product__inner">
+								<h4><a routerLink="/book/{{book.id}}">{{book.name}}</a></h4>
+								<ul class="fr__pro__prize">
+									<li class="old__prize">{{book.oldPrice}}<small>VND</small></li>
+									<li>{{book.finalPrice}}<small>VND</small></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Category Area -->
