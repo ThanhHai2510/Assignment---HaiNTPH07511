@@ -1,0 +1,84 @@
+<div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(https://i.pinimg.com/originals/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg) no-repeat scroll center center / cover ;">
+            <div class="ht__bradcaump__wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="bradcaump__inner">
+                                <nav class="bradcaump-inner">
+                                  <a class="breadcrumb-item" style="font-size: 30px; color: #fff;">Welcome, Admin!</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="header">
+			<div class="logo">
+				
+			</div>
+			<a href="#" class="nav-trigger"><span></span></a>
+		</div>
+		<div class="side-nav">
+			<div class="logo">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/OYO_Rooms_%28logo%29.png" style="width: 50%; margin: 0 auto;">
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a>
+							<span><i class="fa fa-book" aria-hidden="true"></i></span>
+							<span>Book Management</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+							<span>User Management</span>
+						</a>
+					</li>
+					<!-- <li class="active">
+						<a href="#">
+							<span><i class="fa fa-bar-chart"></i></span>
+							<span>Analytics</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span><i class="fa fa-credit-card-alt"></i></span>
+							<span>Payments</span>
+						</a>
+					</li> -->
+				</ul>
+			</nav>
+		</div>
+		<div class="main-content">
+      <header class="d-flex mb-3 pt-3 justify-content-between" style="margin-top: 30px;">
+	<h2>Product Management</h2>
+	<!-- <app-product-add></app-product-add> -->
+</header>
+<div>
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Name</th>
+				<th scope="col">Price</th>
+				<th scope="col">Desc</th>
+				<th scope="col">Action</th>
+			</tr>
+		</thead>
+		<tbody *ngFor="let product of products; index as id">
+			<tr>
+				<th scope="row">{{id+1}}</th>
+				<td><a routerLink="/product/detail/{{product.name}}">{{product.name}}</a></td>
+				<td>{{product.price | currency}}</td>
+				<td>{{product.desc}}</td>
+				<td><button type="button" class="btn btn-primary" (click)="removeProduct(product.name)">Remove</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+		</div>
