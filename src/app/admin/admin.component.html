@@ -79,7 +79,7 @@
         <td><img src="{{book.image}}" alt="book image" style="width: 30%;"/></td>
 				<td><a routerLink="/book/{{book.id}}">{{book.name}}</a></td>
 				<td>{{book.author}}</td>
-				<td>{{book.price}}</td>
+				<td>{{book.finalPrice}} <small> VND</small></td>
         <td>{{book.description}}</td>
         <td>{{book.status ? 'Stocking' : 'Sold Out'}}</td>
 				<td><button type="button" class="btn btn-primary">Remove</button>
