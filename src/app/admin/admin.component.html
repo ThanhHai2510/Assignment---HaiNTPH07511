@@ -55,27 +55,33 @@
 		</div>
 		<div class="main-content">
       <header class="d-flex mb-3 pt-3 justify-content-between" style="margin-top: 30px;">
-	<h2>Product Management</h2>
+	<h2 style="padding-left: 10px;">Book Management</h2>
 	<!-- <app-product-add></app-product-add> -->
 </header>
 <div>
-	<table class="table table-bordered table-hover">
-		<thead>
+	<table class="table table-bordered table-hover" style="width: 90%; margin: 0 auto; text-align: center; font-family: Arial;"> 
+		<thead style="background-color: #2c3e50; color: #fff;">
 			<tr>
 				<th scope="col">#</th>
-				<th scope="col">Name</th>
-				<th scope="col">Price</th>
-				<th scope="col">Desc</th>
-				<th scope="col">Action</th>
+        <th scope="col">IMAGE</th>
+				<th scope="col">NAME</th>
+        <th scope="col">AUTHOR</th>
+				<th scope="col">PRICE</th>
+				<th scope="col">DESCRIPTION</th>
+        <th scope="col">STATUS</th>
+				<th scope="col">ACTION</th>
 			</tr>
 		</thead>
-		<tbody *ngFor="let product of products; index as id">
+		<tbody *ngFor="let book of books; index as id">
 			<tr>
 				<th scope="row">{{id+1}}</th>
-				<td><a routerLink="/product/detail/{{product.name}}">{{product.name}}</a></td>
-				<td>{{product.price | currency}}</td>
-				<td>{{product.desc}}</td>
-				<td><button type="button" class="btn btn-primary" (click)="removeProduct(product.name)">Remove</button>
+        <td><img src="{{book.image}}" alt="book image" style="width: 30%;"/></td>
+				<td><a routerLink="/book/{{book.id}}">{{book.name}}</a></td>
+				<td>{{book.author}}</td>
+				<td>{{book.price}}</td>
+        <td>{{book.description}}</td>
+        <td>{{book.status ? 'Stocking' : 'Sold Out'}}</td>
+				<td><button type="button" class="btn btn-primary">Remove</button>
 				</td>
 			</tr>
 		</tbody>

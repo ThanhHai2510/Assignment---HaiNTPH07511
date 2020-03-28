@@ -46,8 +46,7 @@
               "src/css/plugins/jquery-ui.css",
               "src/css/plugins/meanmenu.css",
               "src/css/plugins/slick-theme.css",
-              "src/css/plugins/slick.css",
-              "src/css/font/slick.svg"
+              "src/css/plugins/slick.css"
             ],
             "scripts": [
               "src/js/ajax-mail.js",
