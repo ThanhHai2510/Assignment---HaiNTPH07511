@@ -3,8 +3,8 @@
 }
 body {
 	margin: 0;
-	paddin: 0;
-	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif !important;
 	background-color: #d5dae5;
 	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
