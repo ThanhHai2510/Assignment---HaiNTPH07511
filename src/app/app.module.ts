@@ -15,10 +15,11 @@ import { ProductComponent } from './product/product.component';
 import { BookService } from './book.service';
 import { AdminComponent } from './admin/admin.component';
 import { AddBookComponent } from './add-book/add-book.component';
+import { ClientComponent } from './client/client.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, SliderComponent, NewBooksComponent, TopRateComponent, BlogComponent, HomeComponent, ProductDetailComponent, ProductComponent, AdminComponent, AddBookComponent ],
+  declarations: [ AppComponent, HelloComponent, SliderComponent, NewBooksComponent, TopRateComponent, BlogComponent, HomeComponent, ProductDetailComponent, ProductComponent, AdminComponent, AddBookComponent, ClientComponent ],
   bootstrap:    [ AppComponent ],
   providers: [BookService]
 })
