@@ -39,6 +39,7 @@
               "src/css/header.css",
               "src/css/footer.css",
               "src/css/slider.css",
+              "src/css/all.min.css",
               "src/css/shortcodes.css",
               "src/css/plugins/animate.css",
               "src/css/plugins/animation.css",
