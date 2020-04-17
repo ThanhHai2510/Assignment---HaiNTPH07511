@@ -4,6 +4,7 @@ import { HomeComponent } from "./home/home.component";
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
 import { AdminComponent } from "./admin/admin.component";
 import { ClientComponent } from "./client/client.component";
+import { BookManagerComponent } from "./book-manager/book-manager.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -11,16 +12,24 @@ const routes: Routes = [
     path: "home",
     component: ClientComponent,
     children: [
-      { path: "book/:id", 
-        component: ProductDetailComponent },
-        {
+      { path: "book/:id", component: ProductDetailComponent },
+      {
         path: "",
         component: HomeComponent
       }
     ]
   },
-  
-  { path: "admin", component: AdminComponent }
+
+  {
+    path: "admin",
+    component: AdminComponent,
+    children: [
+      {
+        path: "products",
+        component: BookManagerComponent
+      }
+    ]
+  }
 ];
 
 @NgModule({

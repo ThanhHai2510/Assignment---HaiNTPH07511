@@ -10,32 +10,32 @@
 		</a>
 
 		<!-- Divider -->
-		<hr class="sidebar-divider my-0">
+		<hr class="sidebar-divider">
 
 		<!-- Nav Item - Dashboard -->
 		<li class="nav-item">
-			<a class="nav-link" href="index.html">
-				<i class="fa fa-search" aria-hidden="true"></i>
-				<span>Dashboard</span></a>
+			<a class="nav-link">
+        <span class="material-icons md-24" style="width: 36px; padding-right: 10px;">dashboard</span>
+				<span>DASHBOARD</span></a>
 		</li>
 
 		<hr class="sidebar-divider">
 
 		<li class="nav-item">
-			<a class="nav-link" href="index.html">
-				<i class="fas fa-fw fa-tachometer-alt"></i>
-				<span>Dashboard</span></a>
+			<a class="nav-link" routerLink="products" routerLinkActive="active">
+				<span class="material-icons" style="width: 120%; padding-right: 10px;">table_chart</span>
+				<span>PRODUCTS</span></a>
 		</li>
 
     <hr class="sidebar-divider">
 
-		<li class="nav-item">
+		<!-- <li class="nav-item">
 			<a class="nav-link" href="index.html">
 				<i class="fas fa-fw fa-tachometer-alt"></i>
 				<span>Dashboard</span></a>
 		</li>
 
-		<hr class="sidebar-divider">
+		<hr class="sidebar-divider"> -->
 
 	</ul>
 	<!-- End of Sidebar -->
@@ -116,7 +116,7 @@
 					<!-- Nav Item - User Information -->
 					<li class="nav-item dropdown no-arrow">
 						<a class="nav-link dropdown-toggle" id="userDropdown" role="button" aria-expanded="false"
-							aria-haspopup="true" href="#" data-toggle="dropdown">
+							aria-haspopup="true" data-toggle="dropdown">
 							<span class="mr-2 d-none d-lg-inline text-gray-600 small">HaiNT PH07511</span>
 							<img class="img-profile rounded-circle" src="https://i.pinimg.com/originals/5f/db/33/5fdb3341f3e0d6a465e4c939a28a16d2.jpg">
               </a>
@@ -151,9 +151,7 @@
 			<!-- Begin Page Content -->
 			<div class="container-fluid">
 
-				<!-- Page Heading -->
-				<h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
-
+			<router-outlet></router-outlet>
 			</div>
 			<!-- /.container-fluid -->
 

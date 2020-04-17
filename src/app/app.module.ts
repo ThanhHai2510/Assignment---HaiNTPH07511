@@ -16,10 +16,12 @@ import { BookService } from './book.service';
 import { AdminComponent } from './admin/admin.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { ClientComponent } from './client/client.component';
+import { BookManagerComponent } from './book-manager/book-manager.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, SliderComponent, NewBooksComponent, TopRateComponent, BlogComponent, HomeComponent, ProductDetailComponent, ProductComponent, AdminComponent, AddBookComponent, ClientComponent ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, NgbModule ],
+  declarations: [ AppComponent, HelloComponent, SliderComponent, NewBooksComponent, TopRateComponent, BlogComponent, HomeComponent, ProductDetailComponent, ProductComponent, AdminComponent, AddBookComponent, ClientComponent, BookManagerComponent ],
   bootstrap:    [ AppComponent ],
   providers: [BookService]
 })
